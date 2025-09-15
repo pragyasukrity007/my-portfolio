@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certifications";
+import Academic from "./components/Academic";
 
 export default function App() {
   return (
@@ -27,6 +28,9 @@ export default function App() {
         </section>
         <section id="projects" className="py-16">
           <Projects />
+        </section>
+        <section id="academic" className="py-16">
+          <Academic />
         </section>
         <section id="certifications" className="py-16">
           <Certifications />
