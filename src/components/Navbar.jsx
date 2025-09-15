@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo / Name */}
           <div className="flex-shrink-0 font-bold text-xl text-gray-800 dark:text-white">
-            Pragya Sukrity
+            <a href="#about">Pragya Sukrity</a>
           </div>
 
           {/* Desktop Menu */}
@@ -125,12 +125,12 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-100 dark:bg-gray-900 px-2 pt-2 pb-4 space-y-2">
-          <a
+          {/* <a
             href="#about"
             className="block text-gray-700 dark:text-gray-200 px-2 py-1 hover:text-blue-600"
           >
             About
-          </a>
+          </a> */}
           <a
             href="#experience"
             className="block text-gray-700 dark:text-gray-200 px-2 py-1 hover:text-blue-600"

@@ -14,28 +14,28 @@ export default function App() {
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
       <Navbar />
       <main className="container mx-auto px-6">
-        {/* <section id="hero" className="py-16">
+        {/* <section id="hero" className="py-5">
           <Hero />
         </section> */}
-        <section id="about" className="py-16">
+        <section id="about" className="py-5">
           <About />
         </section>
-        <section id="experience" className="py-16">
+        <section id="experience" className="py-5">
           <Experience />
         </section>
-        <section id="skills" className="py-16">
+        <section id="skills" className="py-5">
           <Skills />
         </section>
-        <section id="projects" className="py-16">
+        <section id="projects" className="py-5">
           <Projects />
         </section>
-        <section id="academic" className="py-16">
+        <section id="academic" className="py-5">
           <Academic />
         </section>
-        <section id="certifications" className="py-16">
+        <section id="certifications" className="py-5">
           <Certifications />
         </section>
-        <section id="contact" className="py-16">
+        <section id="contact" className="py-5">
           <Contact />
         </section>
       </main>
