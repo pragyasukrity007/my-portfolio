@@ -1,4 +1,22 @@
-
+const projects = [
+  {
+    title: "Basic JavaScript Projects",
+    description:
+      "A collection of beginner-friendly JavaScript projects like countdown timers, calculators, and form validation — built to strengthen core JS fundamentals.",
+    source: "https://github.com/pragyasukrity007/basic-JavaScript-Projects",
+  },
+  {
+    title: "Mini Projects with React",
+    description:
+      "A set of small React.js projects such as to-do apps, notes app, and UI experiments — showcasing reusable components and state management.",
+    source: "https://github.com/pragyasukrity007/mini-projects-ReactJS",
+  },
+  {
+    title: "Coming soon",
+    description: "I’ll add projects here as I finish them — stay tuned!",
+    source: null,
+  },
+];
 
 export default function Projects() {
   return (
@@ -6,24 +24,32 @@ export default function Projects() {
       <h2 className="text-2xl font-bold mb-4">Projects</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="border rounded-lg p-6 flex flex-col items-start justify-between">
-          <div>
-            <h3 className="font-semibold">Coming soon</h3>
-            <p className="mt-2 text-sm text-gray-600">I’ll add projects here as I finish them — stay tuned!</p>
+        {projects.map((project, i) => (
+          <div
+            key={i}
+            className="border rounded-lg p-6 flex flex-col items-start justify-between bg-gray-50 dark:bg-gray-800"
+          >
+            <div>
+              <h3 className="font-semibold">{project.title}</h3>
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                {project.description}
+              </p>
+            </div>
+            {project.source && (
+              <div className="mt-4 flex gap-2">
+                <a
+                  href={project.source}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm underline"
+                >
+                  Source
+                </a>
+              </div>
+            )}
           </div>
-        </div>
-
-        {/* Example project card (copy/paste later when you have projects)
-        <div className="border rounded-lg p-6">
-          <h3 className="font-semibold">Project name</h3>
-          <p className="text-sm mt-2">Short description</p>
-          <div className="mt-4 flex gap-2">
-            <a href="#" className="text-sm underline">Live</a>
-            <a href="#" className="text-sm underline">Source</a>
-          </div>
-        </div>
-        */}
+        ))}
       </div>
     </div>
-  )
+  );
 }

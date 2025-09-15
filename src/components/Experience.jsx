@@ -1,25 +1,41 @@
 
-
 const data = [
   {
     title: 'Software Engineer II',
     company: 'Nuvolo',
     range: 'Apr 2025 - Present',
-    bullets: ['Working on ServiceNow integrations and front-end features', 'React.js, Vanilla JS']
+    bullets: [
+      'Working on ServiceNow UI Builder for Asset and Maintenance Management',
+      'Implemented front-end features using React.js and Vanilla JS'
+    ]
   },
   {
     title: 'Senior Software Engineer',
     company: 'LTIMindtree',
     range: 'Oct 2024 - Mar 2025',
-    bullets: ['Led critical front-end features', 'Performance optimizations']
+    bullets: [
+      'Reduced page load times by 40% through code optimization and efficient state management',
+      'Mentored junior developers and established best practices for clean, maintainable code',
+      'Delivered 8+ client-facing features, enhancing user satisfaction by 15%',
+      'Implemented Jest tests achieving 95% coverage, reducing bugs by 30%',
+      'Optimized deployment pipelines with Azure DevOps, reducing time from 2 hours to 15 minutes',
+      'Integrated Auth0 for secure authentication and implemented Terraform for infrastructure automation'
+    ]
   },
   {
     title: 'Software Engineer',
     company: 'LTIMindtree',
     range: 'Jun 2021 - Sep 2024',
-    bullets: ['Built 50+ reusable React components', 'Implemented JWT authentication']
+    bullets: [
+      'Designed the front end of an e-commerce app with 50+ reusable React components',
+      'Developed 25+ API endpoints, ensuring seamless integration between front-end and back-end systems',
+      'Enhanced security with JWT protocols, reducing unauthorized access attempts by 40%',
+      'Created 10+ Braze email templates, boosting engagement rates by 15%',
+      'Coordinated with external partners to ensure timely project delivery, reducing miscommunication by 30%',
+      'Achieved a 5-star customer rating by consistently delivering timely updates and exceptional support'
+    ]
   }
-]
+];
 
 export default function Experience() {
   return (
