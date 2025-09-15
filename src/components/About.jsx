@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="py-12 max-w-5xl mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
+      {/* <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2> */}
 
       <div className="grid md:grid-cols-2 gap-8 items-center">
         {/* Left: Photo */}
